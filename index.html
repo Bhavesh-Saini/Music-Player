@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSIC PLAYER</title>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!-- adding logo of music player -->
+        <li class="brand"><img src="logo.jpeg" alt="Spotify" />Music</li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <!-- adding songs, duration, name etc. -->
+    <div class="container">
+      <div class="songList">
+        <h1>Best Punjabi Songs</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">These Days</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >03:24<i id="0" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="2" />
+            <span class="songName">Blessing of Baapu</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:06<i id="1" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="3" />
+            <span class="songName">Tere Bare</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >02:51<i id="2" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="4" />
+            <span class="songName">Naah</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >03:04<i id="3" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="5" />
+            <span class="songName">Mill lo Naa</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >02:49<i id="4" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="6" />
+            <span class="songName">Hair</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:12<i id="5" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="7" />
+            <span class="songName">Laal Chunariya</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >03:19<i id="6" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="8" />
+            <span class="songName">Jannat</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:05<i id="7" class="songItemPlay fa-solid fa-play"></i></span
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- progress bar -->
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        value="0"
+        max="100"
+      />
+      <div class="icons">
+        <!-- fontawesome icons for play/pause etc. -->
+        <i class="fa-solid fa-backward" id="previous"></i>
+        <i class="fa-solid fa-play" id="masterPlay"></i>
+        <i class="fa-solid fa-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <!-- adding a playing gif shown when song is playing  -->
+        <img src="playing.gif" width="40px" id="gif" /><span id="masterSongName"
+          >These Days-Sidhu Moose Wala</span
+        >
+      </div>
+    </div>
+    <!-- adding fontawesome js file from internet -->
+    <script
+      src="https://kit.fontawesome.com/2e7685fff2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- adding js file -->
+    <script src="script.js"></script>
+  </body>
+</html>

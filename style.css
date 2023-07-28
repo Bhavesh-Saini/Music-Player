@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&family=Playfair+Display:ital@1&display=swap");
+
+body {
+  background-color: aqua;
+}
+
+/* for whole file if not given explicitly */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Playfair Display", serif;
+}
+
+nav ul {
+  /* make all items horizontal */
+  display: flex;
+  align-items: center;
+  /* no dots before list items */
+  list-style-type: none;
+
+  height: 60px;
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+}
+
+nav ul li {
+  /* space between home and about */
+  padding: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.brand img {
+  width: 50px;
+  /* space between img and logo */
+  padding: 5px;
+}
+
+.container {
+  min-height: 70vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 70%;
+  /* make it to center */
+  padding: 10px;
+  margin: 30px auto;
+  border-radius: 12px;
+  background-image: url("https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=1380&t=st=1689961310~exp=1689961910~hmac=71a60cffca48985d15933c62ca0669f56a507f40115f3f25d68a27aeb7a9e7bc");
+}
+.bottom {
+  position: sticky;
+  height: 90px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons {
+  /* create margin b/w seek bar and buttons */
+  margin-top: 15px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin-top: 74px;
+}
+
+.songItem {
+  display: flex;
+  height: 5vh;
+  background-color: white;
+  color: black;
+  margin: 20px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.songItem img {
+  width: 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.timestamp {
+  margin: 20px;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+}
+
+.songInfo img {
+  opacity: 0;
+  /* gif showing/not showing opacity and speed */
+  transition: opacity 0.2s ease-in;
+}
